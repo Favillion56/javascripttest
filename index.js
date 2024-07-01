@@ -9,10 +9,22 @@
 
     let div = number1 / number2
 
-    const numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"];
+    function fizzbangcalcu(num) {
+      for (let i = 0; i <= num; i++) {
+        if (i % 5== 0 && i % 3 == 0) {
+          console.log ("fizzbang") ; }
 
-let text = "";
-for (let info = 0; info < numbers.length; info++) {
-  text += numbers[info] + "<br>";
-}
-// somehow make const numbers, be tracked by a false or true statement that recgnises those div by 3 or 5 to make fixxbang
+        else if (i % 3== 0) {
+         console.log ("fizz") ;}
+
+         else if (i % 5== 0) {
+          console.log ("bang") ;}
+          else {console.log(i);
+
+          }
+        }
+      }
+fizzbangcalcu(30);
+
+//note for future, study more on symbols and how they interact in javascript
+
